@@ -33,16 +33,16 @@ Sub_info = script-name=Sub_info,update-interval=86400
   let used = info.download + info.upload;
   let total = info.total;
   let expire = args.expire || info.expire;
-  let content = [`Used: ${bytesToSize(used)}｜Reset: ${resetDayLeft} Days`];
+  let content = [`𝑼𝒔𝒆𝒅: ${bytesToSize(used)}｜𝑹𝒆𝒔𝒆𝒕: ${resetDayLeft} 𝑫𝒂𝒚𝒔 `];
 
 /*
   if (resetDayLeft) {
-    content.push(`重置：剩余${resetDayLeft}天`);
+    content.push(`𝑹𝒆𝒑𝒍𝒂𝒄𝒆：ʙᴇ ʟᴇғᴛ 🎯: ➺ ${resetDayLeft}天`);
   }
 
   if (expire) {
     if (/^[\d.]+$/.test(expire)) expire *= 1000;
-    content.push(`到期：${formatTime(expire)}`);
+    content.push(`𝑩𝒆𝒄𝒐𝒎𝒆 𝒅𝒖𝒆：${formatTime(expire)}`);
   }
 */
   let now = new Date();
